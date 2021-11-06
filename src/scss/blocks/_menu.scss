@@ -1,15 +1,14 @@
 .header {
+	width: 100%;
 	display: block;
 	position: absolute;
 
 	& .container{
-		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: end;
 		align-items: center;
 	}
-
 }
 
 .nav {
@@ -22,27 +21,36 @@
 	text-transform: uppercase;
 	color: #000;
 	text-decoration: none;
+	transition: all 0.3s ease-in-out;
 
-	& ul {
-		display: inline-flex;
-		flex-wrap: wrap;
-	}
-	
 	&_list {
-		display: flex;
-		visibility: hidden;
+		opacity: 0;
 		flex-wrap: wrap;
+		transition: all 0.3s;
 	}
 
 	&.active {
 		.nav_list {
 			opacity: 1;
-			visibility: visible;
+		}
+
+		& + .burger-btn {
+			&:before {
+				transform: rotate(45deg);
+				top: 13px;
+			}
+
+			&:after {
+				transform: rotate(-45deg);
+				top: 13px;
+			}
+
+			span {
+				opacity: 0;
+			}
 		}
 	}
-
 }
-
 
 .burger-btn {
 	display: block;
@@ -54,7 +62,6 @@
 	outline: none;
 	background-color: transparent;
 	cursor: pointer;
-
 
 	&:before {
 		content: ' ';

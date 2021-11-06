@@ -26,19 +26,19 @@ li {
 }
 
 .header {
+  width: 100%;
   display: block;
   position: absolute;
 }
 .header .container {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -54,25 +54,31 @@ li {
   text-transform: uppercase;
   color: #000;
   text-decoration: none;
-}
-.nav ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .nav_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  visibility: hidden;
+  opacity: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .nav.active .nav_list {
   opacity: 1;
-  visibility: visible;
+}
+.nav.active + .burger-btn:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 13px;
+}
+.nav.active + .burger-btn:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 13px;
+}
+.nav.active + .burger-btn span {
+  opacity: 0;
 }
 
 .burger-btn {
@@ -148,6 +154,50 @@ li {
   padding-top: 70px;
   font-family: "latoregular", sans-serif;
   line-height: 2;
+}
+
+.latest-works .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 103px;
+  padding-top: 91px;
+}
+.latest-works .text__title {
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  line-height: 35px;
+  font-weight: 300;
+  color: #3677fd;
+}
+.latest-works .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(33.33%);
+          flex: 1 1 calc(33.33%);
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.latest-works .container__flex {
+  padding: 15px;
+}
+.latest-works .container__link {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.latest-works .container__link:hover {
+  opacity: 0.5;
 }
 
 .clients {
