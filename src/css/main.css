@@ -127,3 +127,63 @@ li {
   background-position: center;
   background-size: cover;
 }
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0;
+  text-align: center;
+}
+.about-me__holder-title {
+  color: #3676fd;
+  font-family: "latolight", sans-serif;
+  font-size: 40px;
+}
+.about-me__holder-text {
+  max-width: 1070px;
+  padding-top: 70px;
+  font-family: "latoregular", sans-serif;
+  line-height: 2;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f1f8ff;
+  min-height: 360px;
+}
+.clients__title-holder {
+  text-align: center;
+  padding: 90px 0;
+}
+.clients__title {
+  font-family: "latolight", sans-serif;
+  font-size: 40px;
+  color: #3676fd;
+}
+.clients__menu-list {
+  padding-bottom: 100px;
+}
+.clients__menu-list-logo {
+  display: inline-block;
+  margin: 0 30px;
+  opacity: 0.2;
+}
+.clients__menu-list-logo:hover {
+  opacity: 1;
+  -webkit-transition: all ease-in-out 0.7s;
+  transition: all ease-in-out 0.7s;
+}
