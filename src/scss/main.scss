@@ -1,5 +1,6 @@
-@import 'base/mixins';
-@import 'base/reset';
-@import 'base/global';
-@import 'base/var';
-@import 'base/welcome';
+@import "base/_mixins.scss";
+@import "base/_reset.scss";
+@import "base/_global.scss";
+@import "base/_var.scss";
+@import "blocks/_welcome.scss";
+@import "blocks/_pop-up.scss";

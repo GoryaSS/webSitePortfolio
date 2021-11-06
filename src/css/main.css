@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -16,4 +17,138 @@ a {
 
 li {
   list-style: none;
+}
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*форма*/
+.pop-up {
+  position: absolute;
+  border-radius: 5px;
+  top: 50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 810px;
+  padding: 60px 130px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.pop-up__btn {
+  min-width: 200px;
+  min-height: 56px;
+  background-color: #3695ff;
+  color: #fff;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+.pop-up h1 {
+  font-size: 36px;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 700;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #3695ff;
+  text-align: center;
+}
+.pop-up input {
+  width: 100%;
+  padding: 8px 15px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  outline: none;
+  background: #f9f6f3;
+  color: #666;
+  border-radius: 8px;
+}
+
+.pop-up-show {
+  display: block;
+  background-color: #fff;
+}
+
+.pop-up-close {
+  position: absolute;
+  top: 20;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  cursor: pointer;
+  background: url("/src/img/close.png") no-repeat center center;
+}
+
+textarea {
+  width: 100%;
+  min-height: 175px;
+  padding: 8px 15px;
+  margin-bottom: 45px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  outline: none;
+  background: #f9f6f3;
+  color: #666;
+  border-radius: 8px;
+  resize: none;
+}
+
+/* HiRE mE*/
+.hire-me {
+  background: -webkit-gradient(linear, right top, left bottom, from(#1e5799), color-stop(50%, #207cca), color-stop(51%, #2989d8), to(#7db9e8));
+  background: linear-gradient(to left bottom, #1e5799 0%, #207cca 50%, #2989d8 51%, #7db9e8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  height: 245px;
+  color: #fff;
+  font-size: 36px;
+  padding-top: 100px;
+}
+.hire-me__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hire-me__btn {
+  min-width: 193px;
+  min-height: 56px;
+  margin-left: -300px;
+  background-color: #fff;
+  color: #3695ff;
+  border-radius: 30px;
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+}
+@media (max-width: 1023px) {
+  .hire-me__btn {
+    margin-left: 0;
+  }
+}
+.hire-me p {
+  font-weight: 300;
+}
+.hire-me strong {
+  font-weight: 700;
 }
