@@ -1,0 +1,135 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 2000px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  padding-top: 5%;
+  margin: 0 145px;
+  padding: 0px 5px;
+  font-family: "raleway";
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav_list {
+  opacity: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nav.active .nav_list {
+  opacity: 1;
+}
+.nav.active + .burger-btn:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 13px;
+}
+.nav.active + .burger-btn:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 13px;
+}
+.nav.active + .burger-btn span {
+  opacity: 0;
+}
+
+.burger-btn {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  height: 45px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.burger-btn:before {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.burger-btn:after {
+  content: " ";
+  position: absolute;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.burger-btn span {
+  position: absolute;
+  height: 3px;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.welcome {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
