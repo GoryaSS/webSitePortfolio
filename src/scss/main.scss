@@ -1,11 +1,15 @@
 @import "base/mixins";
 @import "../icon/style.css";
+
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/global';
+@import 'base/var';
+@import 'blocks/menu';
+@import 'blocks/welcome';
+@import 'blocks/about-me';
 @import "blocks/expert-in";
+@import "blocks/latest-works";
+@import 'blocks/clients';
 
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
 
