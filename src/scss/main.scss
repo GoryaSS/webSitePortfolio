@@ -1,6 +1,11 @@
-@import 'base/mixins';
-@import 'base/reset';
-@import 'base/global';
-@import 'base/var';
-@import 'blocks/menu';
-@import 'blocks/welcome';
+@import "base/mixins";
+@import "../icon/style.css";
+@import "blocks/expert-in";
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
