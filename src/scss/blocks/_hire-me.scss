@@ -1,0 +1,42 @@
+/* HiRE mE*/
+.hire-me {
+  background: linear-gradient(
+    to left bottom,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(32, 124, 202, 1) 50%,
+    rgba(41, 137, 216, 1) 51%,
+    rgba(125, 185, 232, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  height: 245px;
+  color: #fff;
+  font-size: $titleh2;
+  padding-top: 100px;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__btn {
+    min-width: 193px;
+    min-height: 56px;
+    margin-left: -300px;
+    background-color: #fff;
+    color: $blue;
+    border-radius: 30px;
+    display: block;
+    font-weight: 700;
+    font-size: $titleh3;
+    @include media("<desktop") {
+      margin-left: 0;
+    }
+  }
+  & p {
+    font-weight: 300;
+  }
+  & strong {
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,83 @@
+/*форма*/
+.pop-up {
+  position: absolute;
+  border-radius: 5px;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 810px;
+  padding: 60px 130px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+
+  display: none;
+  box-sizing: border-box;
+
+  &__btn {
+    min-width: 200px;
+    min-height: 56px;
+    background-color: $blue;
+    color: #fff;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+  }
+  & h1 {
+    font-size: $titleh2;
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: 700;
+    line-height: 42px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: $blue;
+    text-align: center;
+  }
+
+  & input {
+    width: 100%;
+    padding: 8px 15px;
+    margin-bottom: 14px;
+    border: 1px solid $lightGrey;
+
+    font-size: 12px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    outline: none;
+    background: #f9f6f3;
+    color: $darkGrey;
+    border-radius: 8px;
+  }
+}
+
+.pop-up-show {
+  display: block;
+  background-color: #fff;
+  position: fixed;
+}
+.pop-up-close {
+  position: absolute;
+  top: 20;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  cursor: pointer;
+  background: url("/src/img/close.png") no-repeat center center;
+}
+textarea {
+  width: 100%;
+  min-height: 175px;
+  padding: 8px 15px;
+  margin-bottom: 45px;
+  border: 1px solid $lightGrey;
+
+  font-size: 12px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  outline: none;
+  background: #f9f6f3;
+  color: $darkGrey;
+  border-radius: 8px;
+  resize: none;
+}
+

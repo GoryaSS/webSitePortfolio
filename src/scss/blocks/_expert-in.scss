@@ -1,0 +1,86 @@
+.expert-in {
+    background-color: #F1F8FF;
+
+    &__heading {
+        font-size: 50px;
+        padding: 100px 0 100px 0;
+        text-align: center;
+        color: #3572FD;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__list {
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 21px;
+        list-style: none;
+    }
+
+    &__item {
+        min-width: calc(90% / 3);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #3572FD;
+        max-width: max-content;
+        max-height: max-content;
+        transition: all ease-in-out 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__icon {
+        border: 1px solid #B7C0C9;
+        height: 139px;
+        width: 139px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    i {
+        font-size: 66px;
+    }
+
+    &__text {
+        padding: 54px 0;
+        max-width: 325px;
+        text-align: center;
+
+    }
+
+    .icon-Inteligentny-obiekt-wektorowy-4 {
+        position: relative;
+        left: 2px;
+        bottom: 5px;
+    }
+
+    h3 {
+        color: #3572FD;
+        padding-bottom: 21px;
+    }
+
+    span {
+        color: #5A5A5A;
+    }
+}

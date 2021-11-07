@@ -1,0 +1,38 @@
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(241, 248, 255);
+    min-height: 360px;
+
+    .container {
+        display: block;
+    }
+
+    &__title-holder {
+        text-align: center;
+        padding: 90px 0;
+    }
+
+    &__title {
+        font-family: 'latolight', sans-serif;
+        font-size: 40px;
+        color: rgb(54, 118, 253);
+    }
+
+    &__menu-list {
+        padding-bottom: 100px;
+    }
+
+    &__menu-list-logo {
+        display: inline-block;
+        margin: 0 30px;
+        opacity: 0.20;
+
+        &:hover {
+            opacity: 1;
+            transition: all ease-in-out 0.7s;
+        }
+    }
+}

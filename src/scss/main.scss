@@ -3,5 +3,13 @@
 @import 'base/global';
 @import 'base/var';
 @import '../font/icon/style.css';
+@import "../icon/style.css";
+
 @import 'blocks/menu';
 @import 'blocks/welcome';
+@import 'blocks/about-me';
+@import "blocks/expert-in";
+@import "blocks/latest-works";
+@import 'blocks/clients';
+@import "blocks/hire-me";
+@import "blocks/pop-up";
