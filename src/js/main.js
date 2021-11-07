@@ -1,4 +1,12 @@
 $(document).ready(() => {
+    $('.js-nav-opener').on('click', function () {
+        if($('.nav').hasClass('active')) {
+            $('.nav').removeClass('active');
+        } else {
+            $('.nav').addClass('active');
+        }
+    })
+
     let link = document.querySelector(".hire-me__btn");
     let popup = document.querySelector(".pop-up");
     let close = document.querySelector(".pop-up-close");
