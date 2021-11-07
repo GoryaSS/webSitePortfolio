@@ -1,0 +1,84 @@
+.container {
+	display: flex;
+	align-items: center;
+}
+
+.welcome {
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+		
+		&__port {
+		max-width: 780px;
+		padding: 0 0 40px 0;
+		color: #fff;
+		font-size: 40px;
+		text-transform: uppercase;
+		text-align: center;
+		}
+
+		&__lorem {
+		max-width: 760px;
+		margin: 0 auto;
+		padding: 0 0 75px 0;
+		color: #fff;
+		font-size: 15px;
+		text-transform: uppercase;
+		text-align: center;
+		}
+
+		&__img {
+		position: relative;
+		margin: 0 auto;
+		margin-bottom: 75px;
+		width: 150px;
+		height: 150px;
+		background-color: #fff;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 170px;
+				height: 170px;
+				border: 10px solid #589bfe;
+				border-radius: 50%;
+				top: -20px;
+			}
+			
+			&:after {
+				content: '';
+				position: absolute;
+				width: 152px;
+				height: 152px;
+				border: 10px solid #4793fe;
+				border-radius: 50%;
+				top: -11px;
+			}
+
+		}
+
+		&__btn {
+		margin: 0 auto 50px;
+		padding: 10px;
+		text-transform: uppercase;
+		max-width: 200px;
+		background-color: #fff;
+		border-radius: 20px;
+		}
+
+		&__scrol {
+			position: relative;
+			padding-top: 20px;
+			top: 20px;
+		}
+	.btn-holder {
+	color: #3c8efe;
+	}		
+}

@@ -1,0 +1,91 @@
+.header {
+	display: block;
+	position: absolute;
+
+	& .container{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+}
+
+.nav {
+	padding-top:5%;
+	margin: 0 145px;
+	padding: 0px 5px;
+	font-family: "raleway";
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: none;
+
+	& ul {
+		display: inline-flex;
+		flex-wrap: wrap;
+	}
+	
+	&_list {
+		display: flex;
+		visibility: hidden;
+		flex-wrap: wrap;
+	}
+
+	&.active {
+		.nav_list {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+}
+
+
+.burger-btn {
+	display: block;
+	position: relative;
+	z-index: 2;
+	width: 50px;
+	height: 45px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+
+
+	&:before {
+		content: ' ';
+		position: absolute;
+		height: 3px;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		transition: all 0.3s ease-in-out;
+	}
+
+	&:after {
+		content: ' ';
+		position: absolute;
+		height: 3px;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		transition: all 0.3s ease-in-out;
+	}
+
+	span {
+		position: absolute;
+		height: 3px;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		transform: translateY(-50%);
+		transition: all 0.3s ease-in-out;
+	}
+}
