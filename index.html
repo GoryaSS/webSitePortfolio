@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="src/fonts/style/stylesheet.css">
 	<link rel="stylesheet" href="src/css/main.css">
 	<link rel="stylesheet" href="src/fonts/fonts.css">
+	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/8c5e5bb64f/UntitledProject/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"/>
@@ -16,30 +17,35 @@
 </head>
 <body>
 	<header class="header">
+		<div class="header__bg"></div>
 		<div class="container">
-			<nav class="nav">
-				<ul class="nav_list">
-					<li>
-						<a href="#" class="nav__link">Welcome</a>
-					</li>
-					<li>
-						<a href="#" class="nav__link">About Me</a>
-					</li>
-					<li>
-						<a href="#" class="nav__link">Expert In</a>
-					</li>
-					<li>
-						<a href="#" class="nav__link">Latest Works</a>
-					</li>
-					<li>
-						<a href="#" class="nav__link">Clients</a>
-					</li>
-					<li>
-						<a href="#" class="nav__link">Hire Me</a>
-					</li>
+			<div class="nav-btn">
+				<button class="burger-btn js-nav-opener"><span></span></button>
+			</div>
+			<div class="menu">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li>
+							<a href="#" class="nav__link">About Me</a>
+						</li>
+						<li>
+							<a href="#" class="nav__link">Services</a>
+						</li>
+						<li>
+							<a href="#" class="nav__link">My Works</a>
+						</li>
+						<li>
+							<a href="#" class="nav__link">Clients</a>
+						</li>
+					</ul>
+				</nav>
+				<ul class="social">
+					<li><a href="#" class="social__link"><span class="icon-facebook-with-circle"></span></a></li>
+					<li><a href="#" class="social__link"><span class="icon-twitter-with-circle"></span></a></li>
+					<li><a href="#" class="social__link"><span class="icon-dribbble-with-circle"></span></a></li>
+					<li><a href="#" class="social__link"><span class="icon-linkedin-with-circle"></span></a></li>
 				</ul>
-			</nav>
-			<button class="burger-btn js-nav-opener"><span></span></button>
+			</div>
 		</div>
 	</header>
 
@@ -213,7 +219,6 @@
     <section class="pop-up">
         <div class="pop-up-close">закрыть</div>
         <h1>Hire Me</h1>
-
         <form class="pop-up__form" action="/echo" method="post">
             <input type="text" name="login" placeholder="Your Name" required>
             <input type="email" name="E-Mail" placeholder="Your E-Mail" required>

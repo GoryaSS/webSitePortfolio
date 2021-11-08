@@ -1,9 +1,9 @@
 $(document).ready(() => {
     $('.js-nav-opener').on('click', function () {
-        if($('.nav').hasClass('active')) {
-            $('.nav').removeClass('active');
+        if($('.header').hasClass('active')) {
+            $('.header').removeClass('active');
         } else {
-            $('.nav').addClass('active');
+            $('.header').addClass('active');
         }
     })
 

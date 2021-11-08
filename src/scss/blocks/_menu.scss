@@ -2,62 +2,71 @@
 	width: 100%;
 	display: block;
 	position: absolute;
+	
+	&__bg {
+		position: absolute;
+		width: 100%;
+		min-height: 100vh;
+		background: rgba(70, 70, 70, 0.70);
+		opacity: 0;
+	}
 
 	& .container{
+		max-width: 60%;
+		max-height: 50%;
+		padding: 80px 0 0;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: end;
+		justify-content: center;
 		align-items: center;
-	}
-}
-
-.nav {
-	padding-top:5%;
-	margin: 0 145px;
-	padding: 0px 5px;
-	font-family: "raleway";
-	font-weight: 700;
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #000;
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
-
-	&_list {
-		opacity: 0;
-		flex-wrap: wrap;
-		transition: all 0.3s;
+		position: relative;
 	}
 
 	&.active {
-		.nav_list {
+
+		.header__bg {
 			opacity: 1;
 		}
 
-		& + .burger-btn {
+		.burger-btn {
 			&:before {
 				transform: rotate(45deg);
 				top: 13px;
+				background: #367ffe;
 			}
 
 			&:after {
 				transform: rotate(-45deg);
 				top: 13px;
+				background: #367ffe;
 			}
 
 			span {
 				opacity: 0;
 			}
 		}
+
+		.nav__list {
+			opacity: 1;
+		}
+
+		.menu {
+			opacity: 1;
+		}
 	}
+}
+
+.nav-btn {
+	margin-bottom: -35px;
+	padding-left: 95%;
 }
 
 .burger-btn {
 	display: block;
 	position: relative;
 	z-index: 2;
-	width: 50px;
-	height: 45px;
+	width: 30px;
+	height: 25px;
 	border: none;
 	outline: none;
 	background-color: transparent;
@@ -87,6 +96,7 @@
 
 	span {
 		position: absolute;
+		display: block;
 		height: 3px;
 		top: 50%;
 		left: 0;
@@ -96,3 +106,61 @@
 		transition: all 0.3s ease-in-out;
 	}
 }
+
+.menu {
+	padding-top: 50px;
+	width: 100%;
+	z-index: 1;
+	opacity: 0;
+	background: #fff;
+	border-radius: 10px;
+	transition: all 0.3s ease-in-out;
+
+	.nav {
+		margin: 0 auto 50px;
+		width: 40%;
+		border-bottom: 2px solid #828080;
+		font-family: "lato";
+		font-weight: 300;
+		font-size: 50px;
+		text-align: center;
+		transition: all 0.3s ease-in-out;
+
+		&__list {
+			opacity: 0;
+			flex-wrap: wrap;
+			transition: all 0.3s;
+				line-height: 80px;
+
+			& li:last-child {
+				margin-bottom: 40px;
+			}
+
+			& a {
+				color: #828080;
+				transition: all 0.3s ease-in-out;
+				
+				&:hover {
+					color: #367ffe;
+				}
+			}
+		}
+	}
+
+	.social {
+		margin: 0 25% 5%;
+		display: flex;
+		justify-content: space-evenly;
+
+		&__link {
+			color: #828080;
+			font-size: 55px;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				color: #367ffe;
+			}
+		}
+	}
+}
+
